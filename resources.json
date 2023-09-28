@@ -1,0 +1,229 @@
+{
+    "resources": [
+        {
+            "name": "utils/Logica-dbg-dbg.js"
+        },
+        {
+            "name": "utils/jszip-dbg-dbg.js"
+        },
+        {
+            "name": "utils/Logica-dbg.js"
+        },
+        {
+            "name": "utils/xlsx-dbg-dbg.js"
+        },
+        {
+            "name": "utils/xlsx.js"
+        },
+        {
+            "name": "utils/xlsx-dbg.js"
+        },
+        {
+            "name": "utils/jszip-dbg.js"
+        },
+        {
+            "name": "utils/Logica.js"
+        },
+        {
+            "name": "utils/jszip.js"
+        },
+        {
+            "name": "resources/sap-ui-version.json"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "services/Service-dbg-dbg.js"
+        },
+        {
+            "name": "services/Service.js"
+        },
+        {
+            "name": "services/Service-dbg.js"
+        },
+        {
+            "name": "controller/View.controller.js"
+        },
+        {
+            "name": "test/unit/unitTests.qunit-dbg.js"
+        },
+        {
+            "name": "test/unit/unitTests.qunit.html"
+        },
+        {
+            "name": "test/unit/AllTests-dbg-dbg.js"
+        },
+        {
+            "name": "test/unit/unitTests.qunit-dbg-dbg.js"
+        },
+        {
+            "name": "test/unit/AllTests.js"
+        },
+        {
+            "name": "test/unit/AllTests-dbg.js"
+        },
+        {
+            "name": "test/unit/unitTests.qunit.js"
+        },
+        {
+            "name": "test/unit/controller/View-dbg-dbg.controller.js"
+        },
+        {
+            "name": "test/unit/controller/View-dbg.controller.js"
+        },
+        {
+            "name": "test/unit/controller/View.controller.js"
+        },
+        {
+            "name": "test/integration/NavigationJourney-dbg.js"
+        },
+        {
+            "name": "test/integration/opaTests.qunit-dbg.js"
+        },
+        {
+            "name": "test/integration/AllJourneys-dbg.js"
+        },
+        {
+            "name": "test/integration/opaTests.qunit-dbg-dbg.js"
+        },
+        {
+            "name": "test/integration/opaTests.qunit.js"
+        },
+        {
+            "name": "test/integration/opaTests.qunit.html"
+        },
+        {
+            "name": "test/integration/AllJourneys-dbg-dbg.js"
+        },
+        {
+            "name": "test/integration/NavigationJourney.js"
+        },
+        {
+            "name": "test/integration/arrangements/Startup-dbg.js"
+        },
+        {
+            "name": "test/integration/arrangements/Startup.js"
+        },
+        {
+            "name": "test/integration/arrangements/Startup-dbg-dbg.js"
+        },
+        {
+            "name": "test/integration/NavigationJourney-dbg-dbg.js"
+        },
+        {
+            "name": "test/integration/pages/View1-dbg-dbg.js"
+        },
+        {
+            "name": "test/integration/pages/View1-dbg.js"
+        },
+        {
+            "name": "test/integration/pages/View1.js"
+        },
+        {
+            "name": "test/integration/AllJourneys.js"
+        },
+        {
+            "name": "test/initMockServer.js"
+        },
+        {
+            "name": "test/testsuite.qunit-dbg.js"
+        },
+        {
+            "name": "test/initMockServer-dbg.js"
+        },
+        {
+            "name": "test/testsuite.qunit.js"
+        },
+        {
+            "name": "test/testsuite.qunit.html"
+        },
+        {
+            "name": "test/mockServer.html"
+        },
+        {
+            "name": "test/testsuite.qunit-dbg-dbg.js"
+        },
+        {
+            "name": "test/initMockServer-dbg-dbg.js"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "fragments/CeCo.fragment.xml"
+        },
+        {
+            "name": "fragments/CuentaPL.fragment.xml"
+        },
+        {
+            "name": "fragments/CeBe.fragment.xml"
+        },
+        {
+            "name": "fragments/GrupArt.fragment.xml"
+        },
+        {
+            "name": "fragments/MapGrupPyL.fragment.xml"
+        },
+        {
+            "name": "fragments/CuentaBS.fragment.xml"
+        },
+        {
+            "name": "fragments/MapGrupBal.fragment.xml"
+        },
+        {
+            "name": ".project.json"
+        },
+        {
+            "name": "view/View.view.xml"
+        },
+        {
+            "name": ".user.project.json"
+        },
+        {
+            "name": "resources.json",
+            "merged": true
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "model/models-dbg-dbg.js"
+        },
+        {
+            "name": "model/models-dbg.js"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "localService/metadata.xml"
+        },
+        {
+            "name": "localService/mockserver.js"
+        },
+        {
+            "name": "localService/mockserver-dbg-dbg.js"
+        },
+        {
+            "name": "localService/mockserver-dbg.js"
+        },
+        {
+            "name": "css/style.css"
+        }
+    ]
+}

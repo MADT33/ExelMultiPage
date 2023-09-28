@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns="sap.m"
+	controllerName="raizen.cgral.controller.View">
+	<Table id="id-table4" growing="true" growingScrollToLoad="true" growingThreshold="3000" items="{localModel>/GDASet}" >
+		<columns>
+			<Column>
+				<Label text="{i18n>gda}"/>
+			</Column>
+			<Column>
+				<Label text="{i18n>grupo}"/>
+			</Column>
+			<Column>
+				<Label text="{i18n>grupoDesc}"/>
+			</Column>
+			<Column>
+				<Label text="{i18n>UOMbase}"/>
+			</Column>
+			<Column>
+				<Label text="{i18n>GrupoArt_N1}"/>
+			</Column>
+			<Column>
+				<Label text="{i18n>GrupoArt_N2}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Active">
+				<cells>
+					<Text text="{localModel>GrupoArticulo}"/>
+					<Text text="{localModel>Grupo}"/>
+					<Text text="{localModel>GrupoDesc}"/>
+					<Text text="{localModel>UOMbase}"/>
+					<Text text="{localModel>GrupoArt_N1}"/>
+					<Text text="{localModel>GrupoArt_N2}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

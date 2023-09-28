@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZGW_UPLOAD_FILES_CEBE_SRV" xml:lang="es" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="CEBE" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CebeN1"/>
+                    <PropertyRef Name="CebeN2"/>
+                    <PropertyRef Name="Cebe"/>
+                </Key>
+                <Property Name="CebeN1" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CebeN1Desc" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CebeN2" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CebeN2Desc" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Cebe" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CebeDesc" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Header" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Value"/>
+                </Key>
+                <Property Name="Value" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Indicador de una posición" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="CEBESet" Relationship="ZGW_UPLOAD_FILES_CEBE_SRV.CebeDeep" FromRole="FromRole_CebeDeep" ToRole="ToRole_CebeDeep"/>
+                <NavigationProperty Name="CECOSet" Relationship="ZGW_UPLOAD_FILES_CEBE_SRV.CecoDeep" FromRole="FromRole_CecoDeep" ToRole="ToRole_CecoDeep"/>
+                <NavigationProperty Name="BSSet" Relationship="ZGW_UPLOAD_FILES_CEBE_SRV.BSDeep" FromRole="FromRole_BSDeep" ToRole="ToRole_BSDeep"/>
+                <NavigationProperty Name="PLSet" Relationship="ZGW_UPLOAD_FILES_CEBE_SRV.PLDeep" FromRole="FromRole_PLDeep" ToRole="ToRole_PLDeep"/>
+                <NavigationProperty Name="GDASet" Relationship="ZGW_UPLOAD_FILES_CEBE_SRV.GDADeep" FromRole="FromRole_GDADeep" ToRole="ToRole_GDADeep"/>
+                <NavigationProperty Name="MapeoPLSet" Relationship="ZGW_UPLOAD_FILES_CEBE_SRV.MapeoPLDeep" FromRole="FromRole_MapeoPLDeep" ToRole="ToRole_MapeoPLDeep"/>
+                <NavigationProperty Name="MapeoBSSet" Relationship="ZGW_UPLOAD_FILES_CEBE_SRV.MapeoBSDeep" FromRole="FromRole_MapeoBSDeep" ToRole="ToRole_MapeoBSDeep"/>
+            </EntityType>
+            <EntityType Name="CECO" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Ceco"/>
+                    <PropertyRef Name="Grupo"/>
+                </Key>
+                <Property Name="Ceco" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Grupo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CecoDesc" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="BS" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Cuenta"/>
+                    <PropertyRef Name="Grupo"/>
+                </Key>
+                <Property Name="Cuenta" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Grupo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoDesc" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="PL" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Cuenta"/>
+                    <PropertyRef Name="Grupo"/>
+                </Key>
+                <Property Name="Cuenta" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Grupo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoDesc" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="GDA" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="GrupoArticulo"/>
+                    <PropertyRef Name="Grupo"/>
+                </Key>
+                <Property Name="GrupoArticulo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Grupo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoDesc" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="MapeoPL" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Tipo"/>
+                    <PropertyRef Name="GrupoCeco"/>
+                </Key>
+                <Property Name="Tipo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoCeco" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoCC" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoArticulo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Condicion" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LITemplate" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LIAdicional" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI1" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI2" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI3" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI4" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI5" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI6_LITemplate" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI6_LIAdicional" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="MapeoBS" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Tipo"/>
+                    <PropertyRef Name="Sociedad"/>
+                </Key>
+                <Property Name="Tipo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Sociedad" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SociedadParceiro" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoCC" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LITemplate" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI1" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI2" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI3" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI4" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI5_LITemplate" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI6_Presentacion" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Periodo" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="PeriodoFiscal"/>
+                </Key>
+                <Property Name="PeriodoFiscal" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="AjustePL" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Tipo"/>
+                </Key>
+                <Property Name="Tipo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoCeCo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoCC" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoArticulo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CONDICION" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LITemplate" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LIAdicional" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI1" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI2" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI3" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI4" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI5" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PLMI6_LITemplate" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CentroCoste" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ClaseCosto_cd" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CeBe" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Material" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Centro" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UMVolumenVenta" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="VolumenVenta" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UMVolumenIntake" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="VolumenIntake" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Importe" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ClMovimientoStock" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Tipo_Ajuste" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Comentarios_Ajuste" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="AjusteBS" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Tipo"/>
+                </Key>
+                <Property Name="Tipo" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Sociedad" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SocParciero" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrupoCC" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ClaseCosto_cd" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LITemplate" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI1" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI2" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI3" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI4" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI5_LITemplate" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RZMI6_Presentacion" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Condicion" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Total" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Tipo_Ajuste" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Comentarios_Ajuste" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <Association Name="CecoDeep" sap:content-version="1">
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.Header" Multiplicity="0..1" Role="FromRole_CecoDeep"/>
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.CECO" Multiplicity="*" Role="ToRole_CecoDeep"/>
+            </Association>
+            <Association Name="BSDeep" sap:content-version="1">
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.Header" Multiplicity="0..1" Role="FromRole_BSDeep"/>
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.BS" Multiplicity="*" Role="ToRole_BSDeep"/>
+            </Association>
+            <Association Name="PLDeep" sap:content-version="1">
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.Header" Multiplicity="0..1" Role="FromRole_PLDeep"/>
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.PL" Multiplicity="*" Role="ToRole_PLDeep"/>
+            </Association>
+            <Association Name="GDADeep" sap:content-version="1">
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.Header" Multiplicity="0..1" Role="FromRole_GDADeep"/>
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.GDA" Multiplicity="*" Role="ToRole_GDADeep"/>
+            </Association>
+            <Association Name="MapeoPLDeep" sap:content-version="1">
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.Header" Multiplicity="0..1" Role="FromRole_MapeoPLDeep"/>
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.MapeoPL" Multiplicity="*" Role="ToRole_MapeoPLDeep"/>
+            </Association>
+            <Association Name="MapeoBSDeep" sap:content-version="1">
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.Header" Multiplicity="1" Role="FromRole_MapeoBSDeep"/>
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.MapeoBS" Multiplicity="*" Role="ToRole_MapeoBSDeep"/>
+            </Association>
+            <Association Name="CebeDeep" sap:content-version="1">
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.Header" Multiplicity="0..1" Role="FromRole_CebeDeep"/>
+                <End Type="ZGW_UPLOAD_FILES_CEBE_SRV.CEBE" Multiplicity="*" Role="ToRole_CebeDeep"/>
+            </Association>
+            <EntityContainer Name="ZGW_UPLOAD_FILES_CEBE_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="CEBESet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.CEBE" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="HeaderSet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.Header" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="CECOSet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.CECO" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="BSSet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.BS" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="PLSet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.PL" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="GDASet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.GDA" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="MapeoPLSet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.MapeoPL" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="MapeoBSSet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.MapeoBS" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="PeriodoSet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.Periodo" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="AjustePLSet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.AjustePL" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="AjusteBSSet" EntityType="ZGW_UPLOAD_FILES_CEBE_SRV.AjusteBS" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <AssociationSet Name="CebeDeepSet" Association="ZGW_UPLOAD_FILES_CEBE_SRV.CebeDeep" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_CebeDeep"/>
+                    <End EntitySet="CEBESet" Role="ToRole_CebeDeep"/>
+                </AssociationSet>
+                <AssociationSet Name="MapeoPLDeepSet" Association="ZGW_UPLOAD_FILES_CEBE_SRV.MapeoPLDeep" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_MapeoPLDeep"/>
+                    <End EntitySet="MapeoPLSet" Role="ToRole_MapeoPLDeep"/>
+                </AssociationSet>
+                <AssociationSet Name="BSDeepSet" Association="ZGW_UPLOAD_FILES_CEBE_SRV.BSDeep" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_BSDeep"/>
+                    <End EntitySet="BSSet" Role="ToRole_BSDeep"/>
+                </AssociationSet>
+                <AssociationSet Name="MapeoBSDeepSet" Association="ZGW_UPLOAD_FILES_CEBE_SRV.MapeoBSDeep" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_MapeoBSDeep"/>
+                    <End EntitySet="MapeoBSSet" Role="ToRole_MapeoBSDeep"/>
+                </AssociationSet>
+                <AssociationSet Name="GDADeepSet" Association="ZGW_UPLOAD_FILES_CEBE_SRV.GDADeep" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_GDADeep"/>
+                    <End EntitySet="GDASet" Role="ToRole_GDADeep"/>
+                </AssociationSet>
+                <AssociationSet Name="CecoDeepSet" Association="ZGW_UPLOAD_FILES_CEBE_SRV.CecoDeep" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_CecoDeep"/>
+                    <End EntitySet="CECOSet" Role="ToRole_CecoDeep"/>
+                </AssociationSet>
+                <AssociationSet Name="PLDeepSet" Association="ZGW_UPLOAD_FILES_CEBE_SRV.PLDeep" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_PLDeep"/>
+                    <End EntitySet="PLSet" Role="ToRole_PLDeep"/>
+                </AssociationSet>
+            </EntityContainer>
+            <atom:link rel="self" href="https://raizen:44301/sap/opu/odata/sap/ZGW_UPLOAD_FILES_CEBE_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://raizen:44301/sap/opu/odata/sap/ZGW_UPLOAD_FILES_CEBE_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,1 @@
+sap.ui.define(["raizen/cgral/controller/View.controller"],function(e){"use strict";QUnit.module("View Controller");QUnit.test("I should test the View controller",function(t){var n=new e;n.onInit();t.ok(n)})});

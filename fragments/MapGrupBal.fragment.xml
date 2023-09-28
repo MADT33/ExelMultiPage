@@ -1,0 +1,117 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns="sap.m"
+	controllerName="raizen.cgral.controller.View">
+	<Table id="id-table5" growing="true" growingScrollToLoad="true" growingThreshold="3000" items="{localModel>/MapeoBSSet}" >
+		<columns>
+			<Column>
+				<Text text="{i18n>tipo}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>sociedad}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>sociedadParceiro}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>GrupoCC}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>LITemplate}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>RZMI1}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>RZMI2}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>RZMI3}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>RZMI4}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>RZMI5_LITemplate}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>RZMI6_Presentacion}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>BS_Nivel_1}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>BS_Nivel_2}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>BS_Nivel_3}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>BS_Nivel_4}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>BS_Nivel_5}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>Brasil_BS1}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_BS2}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_BS3}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_BS4}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_BS5}"/>
+			</Column>			
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_BS6}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_BS7}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_BS8}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_BS9}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_BS10}"/>
+			</Column>					
+		</columns>
+		<items>
+			<ColumnListItem type="Active">
+				<cells>
+					<Text text="{localModel>Tipo}"/>
+					<Text text="{localModel>Sociedad}"/>
+					<Text text="{localModel>SociedadParceiro}"/>
+					<Text text="{localModel>GrupoCC}"/>
+					<Text text="{localModel>LITemplate}"/>
+					<Text text="{localModel>RZMI1}"/>
+					<Text text="{localModel>RZMI2}"/>
+					<Text text="{localModel>RZMI3}"/>
+					<Text text="{localModel>RZMI4}"/>
+					<Text text="{localModel>RZMI5_LITemplate}"/>
+					<Text text="{localModel>RZMI6_Presentacion}"/>
+					<Text text="{localModel>BS_Nivel_1}"/>
+					<Text text="{localModel>BS_Nivel_2}"/>
+					<Text text="{localModel>BS_Nivel_3}"/>
+					<Text text="{localModel>BS_Nivel_4}"/>
+					<Text text="{localModel>BS_Nivel_5}"/>
+					<Text text="{localModel>Brasil_BS1}"/>
+                    <Text text="{localModel>Brasil_BS2}"/>
+                    <Text text="{localModel>Brasil_BS3}"/>
+                    <Text text="{localModel>Brasil_BS4}"/>
+                    <Text text="{localModel>Brasil_BS5}"/>
+                    <Text text="{localModel>Brasil_BS6}"/>
+                    <Text text="{localModel>Brasil_BS7}"/>
+                    <Text text="{localModel>Brasil_BS8}"/>
+                    <Text text="{localModel>Brasil_BS9}"/>
+                    <Text text="{localModel>Brasil_BS10}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

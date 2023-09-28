@@ -1,0 +1,73 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns="sap.m"
+	controllerName="raizen.cgral.controller.View">
+	<Table id="id-table3" growing="true" growingScrollToLoad="true" growingThreshold="3000" items="{localModel>/PLSet}" >
+		<columns>
+			<Column demandPopin="true">
+				<Text text="{i18n>pl}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>plGrupo}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>grupoDesc}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaPLN1}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaPLN2}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaPLN3}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaPLN4}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>CuentaPLN5}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaPLN6}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaPLN7}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaPLN8}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaPLN9}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>CuentaPLN10}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>Opex_MF1}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>Opex_MF2}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Active">
+				<cells>
+					<Text text="{localModel>Cuenta}"/>
+					<Text text="{localModel>Grupo}"/>
+					<Text text="{localModel>GrupoDesc}"/>
+                    <Text text="{localModel>CuentaPLN1}"/>
+                    <Text text="{localModel>CuentaPLN2}"/>
+                    <Text text="{localModel>CuentaPLN3}"/>
+                    <Text text="{localModel>CuentaPLN4}"/>
+                    <Text text="{localModel>CuentaPLN5}"/>
+                    <Text text="{localModel>CuentaPLN6}"/>
+                    <Text text="{localModel>CuentaPLN7}"/>
+                    <Text text="{localModel>CuentaPLN8}"/>
+                    <Text text="{localModel>CuentaPLN9}"/>
+                    <Text text="{localModel>CuentaPLN10}"/>
+                    <Text text="{localModel>Opex_MF1}"/>
+                    <Text text="{localModel>Opex_MF2}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

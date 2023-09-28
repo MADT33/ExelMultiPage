@@ -1,0 +1,65 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns="sap.m"
+	controllerName="raizen.cgral.controller.View">
+	<Table id="id-table2" growing="true" growingScrollToLoad="true" growingThreshold="3000" items="{localModel>/CECOSet}" >
+		<columns>
+			<Column>
+				<Text text="{i18n>ceco}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>cecoDesc}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>cecoGrupo}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>CECO_N1}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>CECO_N2}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>CECO_N3}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>CECO_N4}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>CECO_N5}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>CECO_N6}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>CECO_N7}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>CECO_N8}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>CECO_N9}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>CECO_N10}"/>
+			</Column>
+		</columns>
+		<items >
+			<ColumnListItem type="Active" >
+				<cells>
+					<Text text="{localModel>Ceco}"/>
+					<Text text="{localModel>CecoDesc}"/>
+					<Text text="{localModel>CecoGrupo}"/>
+					<Text text="{localModel>CECO_N1}"/>
+					<Text text="{localModel>CECO_N2}"/>
+					<Text text="{localModel>CECO_N3}"/>
+					<Text text="{localModel>CECO_N4}"/>
+					<Text text="{localModel>CECO_N5}"/>
+					<Text text="{localModel>CECO_N6}"/>
+					<Text text="{localModel>CECO_N7}"/>
+					<Text text="{localModel>CECO_N8}"/>
+					<Text text="{localModel>CECO_N9}"/>
+					<Text text="{localModel>CECO_N10}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

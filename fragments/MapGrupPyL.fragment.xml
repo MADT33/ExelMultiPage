@@ -1,0 +1,162 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns="sap.m"
+	controllerName="raizen.cgral.controller.View">
+	<Table id="id-table6" growing="true" growingScrollToLoad="true" growingThreshold="3000" items="{localModel>/MapeoPLSet}" >
+		<columns>
+			<Column demandPopin="true">
+				<Text text="{i18n>tipo}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>grupoCeco}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>grupoCC}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>grupoArticulo}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CeBe}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>Centro}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>Material}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CLmovimientoStock}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>ClaseDocumento}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>Condicion}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>LITemplate}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>LIAdicional}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>PLMI1}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>PLMI2}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>PLMI3}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>PLMI4}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>PLMI5}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>PLMI6_LITemplate}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>PLMI6_LIAdicional}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>PL_EBITDA}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>PL_Nivel_1}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>PL_Nivel_2}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>PL_Otros}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>PL_Nivel_3}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>PL_Nivel_4}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>PL_Nivel_5}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_PL1}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_PL2}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_PL3}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_PL4}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_PL5}"/>
+			</Column>			
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_PL6}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_PL7}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_PL8}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_PL9}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>Brasil_PL10}"/>
+			</Column>			
+		</columns>
+		<items>
+			<ColumnListItem type="Active">
+				<cells>
+					<Text text="{localModel>Tipo}"/>
+					<Text text="{localModel>GrupoCeco}"/>
+					<Text text="{localModel>GrupoCC}"/>
+					<Text text="{localModel>GrupoArticulo}"/>
+
+                    <Text text="{localModel>CeBe}"/>
+                    <Text text="{localModel>Centro}"/>
+                    <Text text="{localModel>Material}"/>
+                    <Text text="{localModel>CLmovimientoStock}"/>
+                    <Text text="{localModel>ClaseDocumento}"/>
+
+					<Text text="{localModel>Condicion}"/>
+					<Text text="{localModel>LITemplate}"/>
+					<Text text="{localModel>LIAdicional}"/>
+					<Text text="{localModel>PLMI1}"/>
+					<Text text="{localModel>PLMI2}"/>
+					<Text text="{localModel>PLMI3}"/>
+					<Text text="{localModel>PLMI4}"/>
+					<Text text="{localModel>PLMI5}"/>
+					<Text text="{localModel>PLMI6_LITemplate}"/>
+					<Text text="{localModel>PLMI6_LIAdicional}"/>
+
+                    <Text text="{localModel>PL_EBITDA}"/>
+                    <Text text="{localModel>PL_Nivel_1}"/>
+                    <Text text="{localModel>PL_Nivel_2}"/>
+                    <Text text="{localModel>PL_Otros}"/>
+                    <Text text="{localModel>PL_Nivel_3}"/>
+                    <Text text="{localModel>PL_Nivel_4}"/>
+                    <Text text="{localModel>PL_Nivel_5}"/>
+                    <Text text="{localModel>Brasil_PL1}"/>
+                    <Text text="{localModel>Brasil_PL2}"/>
+                    <Text text="{localModel>Brasil_PL3}"/>
+                    <Text text="{localModel>Brasil_PL4}"/>
+                    <Text text="{localModel>Brasil_PL5}"/>
+                    <Text text="{localModel>Brasil_PL6}"/>
+                    <Text text="{localModel>Brasil_PL7}"/>
+                    <Text text="{localModel>Brasil_PL8}"/>
+                    <Text text="{localModel>Brasil_PL9}"/>
+                    <Text text="{localModel>Brasil_PL10}"/>
+                    
+
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

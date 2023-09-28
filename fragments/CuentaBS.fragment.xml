@@ -1,0 +1,65 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" xmlns="sap.m"
+	controllerName="raizen.cgral.controller.View">
+	<Table id="id-table7" growing="true" growingScrollToLoad="true" growingThreshold="3000" items="{localModel>/BSSet}">
+		<columns>
+			<Column demandPopin="true">
+				<Text text="{i18n>bs}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>bsGrupo}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>grupoDesc}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaBSN1}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaBSN2}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaBSN3}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaBSN4}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>CuentaBSN5}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaBSN6}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaBSN7}"/>
+			</Column>
+			<Column demandPopin="true">
+				<Text text="{i18n>CuentaBSN8}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaBSN9}"/>
+			</Column>
+            <Column demandPopin="true">
+				<Text text="{i18n>CuentaBSN10}"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Active">
+				<cells>
+					<Text text="{localModel>Cuenta}"/>
+					<Text text="{localModel>Grupo}"/>
+					<Text text="{localModel>GrupoDesc}"/>
+                    <Text text="{localModel>CuentaBSN1}"/>
+                    <Text text="{localModel>CuentaBSN2}"/>
+                    <Text text="{localModel>CuentaBSN3}"/>
+                    <Text text="{localModel>CuentaBSN4}"/>
+                    <Text text="{localModel>CuentaBSN5}"/>
+                    <Text text="{localModel>CuentaBSN6}"/>
+                    <Text text="{localModel>CuentaBSN7}"/>
+                    <Text text="{localModel>CuentaBSN8}"/>
+                    <Text text="{localModel>CuentaBSN9}"/>
+                    <Text text="{localModel>CuentaBSN10}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>
